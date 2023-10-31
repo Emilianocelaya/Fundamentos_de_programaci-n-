@@ -1,23 +1,20 @@
 ﻿using System;
 
-namespace U3programa6 // Note: actual namespace depends on the project name.
+namespace MyApp // Note: actual namespace depends on the project name.
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            
-        
+            int N;
+            Console.WriteLine("Ingrese el un número");
+            N = Convert.ToInt32(Console.ReadLine());
 
-            {
-               
-                int f, c;
-                Console.WriteLine("declarar el valor de los grados c: ");
-                c = Convert.ToInt32(Console.ReadLine());
-                f = (c * 9 / 5) + 32;
-                Console.WriteLine(" equivale a los grados fharenhei: " + f);
-            }
+            if (N % 2 == 0)
+                Console.WriteLine("El número es par");
+            else
+                Console.WriteLine("El número es impar");
+
         }
     }
 }
-
