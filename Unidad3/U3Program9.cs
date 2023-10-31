@@ -13,7 +13,7 @@ namespace U3programa9 // Note: actual namespace depends on the project name.
                 suma = suma + 5;
             else if (hr > 1.01 && hr <= 2.00)
                 suma = suma + 10;
-            Console.WriteLine("total a apgar $ +suma : ");
+            Console.WriteLine("total  $ +suma : ");
         }
     }
 }
