@@ -20,13 +20,13 @@ Scanner sc= new Scanner(System.in);
             if (h <= 40 )
             {
                 sueldosemanalm = ht * pago;
-                System.out.println("Recibiras un total de $" + ssm);
+                System.out.println("Recibiras un total de $" + sueldosemanal);
             }
             else
             {
                 h = horasextra - 40;
                 ssm = 40 * pago + horasextra * (pago * 2);
-                System.out.println("Por trabajar " + horasextra + " horas extra, su paga es de " + sueldosemanal);
+                System.out.println("Por trabajar " + horasextra + " horas extra, tu paga es de " + sueldosemanal);
 
 
             }
