@@ -1,29 +1,22 @@
 ﻿using System;
 
-namespace U3programa8// Note: actual namespace depends on the project name.
+namespace P8_U3 // Note: actual namespace depends on the project name.
 {
-    internal class Program
+    internal class Mayor_Menor
     {
         static void Main(string[] args)
         {
-            double p1, p2, p3, subt, t, ivaT;
-             double iva = 0.16;
+            int N1, N2;
+            Console.WriteLine("Ingresa el primer número: ");
+            N1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ingresa el segundo número: ");
+            N2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("¿Qué precio tiene el 1er producto? ");
-            p1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("¿Qué precio tiene el 2do producto? ");
-            p2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("¿Qué precio tiene el 3er producto? ");
-            p3 = Convert.ToInt32(Console.ReadLine());
+            if (N1 > N2)
+                Console.WriteLine(N1 + " es mayor que " + N2);
+            else
+                Console.WriteLine(N1 + " es menor que " + N2);
 
-            t = p1 + p2 + 3;
-            ivaT = t * iva;
-            subt = t - ivaT;
-            Console.WriteLine("El toal es: " + t);
-            Console.WriteLine("El subtotal es: " + subt);
-            Console.WriteLine("El IVA es: " + ivaT);
         }
     }
 }
-    
-
