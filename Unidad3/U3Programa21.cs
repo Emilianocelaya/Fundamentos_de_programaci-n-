@@ -17,7 +17,7 @@ namespace U3programa21 // Note: actual namespace depends on the project name.
                 if (numero > 0)
                 {
                     alcubo = numero * numero * numero;
-                    Console.WriteLine("El resultado de la operacion es: " + cubo);
+                    Console.WriteLine("El resultado de la operacion es: " + alcubo);
                 }
                 c++;
             }
