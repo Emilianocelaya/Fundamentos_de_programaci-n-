@@ -26,7 +26,7 @@ Scanner sc= new Scanner(System.in);
             {
                 h = horasextra - 40;
                 ssm = 40 * pago + horasextra * (pago * 2);
-                System.out.println("Por trabajar " + hx + " horas extra, usted recibe un total de $" + ssm);
+                System.out.println("Por trabajar " + horasextra + " horas extra, su paga es de " + sueldosemanal);
 
 
             }
