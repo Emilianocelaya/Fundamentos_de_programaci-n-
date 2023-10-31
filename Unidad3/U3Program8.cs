@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace P8_U3 // Note: actual namespace depends on the project name.
+namespace U3programa8 // Note: actual namespace depends on the project name.
 {
     internal class Mayor_Menor
     {
