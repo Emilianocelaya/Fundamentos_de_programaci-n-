@@ -46,7 +46,7 @@ public class U3programa25 {
            
             
         
-           System.out.println(numero1+" "+ operador +" "+ numero2+"  "+ resultado);  
+           System.out.println(numero1+" "+ operador +" "+ numero2+" = "+ resultado);  
     }  while(true);
     }  
 }
