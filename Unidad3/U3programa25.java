@@ -11,13 +11,13 @@ import java.util.Scanner;
 public class U3programa25 {
 
     public static void main(String[] args) {
-         Scanner input = new Scanner(System.in);
+         Scanner sc = new Scanner(System.in);
          char operador;
          double numero1,numero2,resultado;
          
          do{
              System.out.print("ingresar operador (+,-,*,/) o  'q' para salir: ");
-             operador = input.next().charAt(0);
+             operador = sc.next().charAt(0);
          
              if (operador ==  'q'){
              break;
@@ -25,8 +25,8 @@ public class U3programa25 {
          }
          
             System.out.print("ingresar dos numeros : ");  
-           numero1 = input.nextDouble();
-           numero2 = input.nextDouble();
+           numero1 = sc.nextDouble();
+           numero2 = sc.nextDouble();
            switch (operador){
                case '+':
                    resultado = numero1+numero2;
@@ -34,7 +34,7 @@ public class U3programa25 {
                    case '-':
                    resultado = numero1-numero2;
                    break;
-                   case '*':
+                   case '*': si 
                    resultado = numero1*numero2;
                    break;
                    case '/':
