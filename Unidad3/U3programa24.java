@@ -6,26 +6,25 @@ package com.mycompany.u3programa24;
 import java.util.Scanner;
 /**
  *
- * @author Emiliano
+ * @author DELL
  */
 public class U3programa24 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num;
-        do{
-             System.out.print("Ingresa un numero entero: ");
-              num = sc.nextInt();
-            if (num<0){
+        do
+        {
+            System.out.println("Ingrese un numero: ");
+            num = sc.nextInt();
+            if (num < 0){
                 break;
-                
             }
             if (num % 2 == 0){
-                System.out.println(num + "es par ");
-               } else {
-                System.out.println(num + "es impar ");        
-               }
-            } while (true);
+                System.out.println("Es par" + num);
+            }else {
+                System.out.println("Es impar" + num);
+            }
+        }while (true);
     }
-    
 }
