@@ -8,8 +8,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            double[] cali = new double[10]; {9, 8,  7, 7, 8, 8, 9, 8, 6, 7,};
-            double prom = 0, suma = 0, cali;
+            double[] cali = new double[10] {9, 8,  7, 7, 8, 8, 9, 8, 6, 7,};
+            double prom = 0, suma = 0;
             for (int i = 0; i < 10; i++)
             {
                 suma = suma + cali[i];
