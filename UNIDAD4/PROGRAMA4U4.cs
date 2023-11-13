@@ -13,16 +13,16 @@ namespace MyApp
 
             int[] neg = new int[num];
 
-            for (int ne = 0; ne < neg.Length; ne++)
+            for (int i = 0; i < neg.Length; i++)
             {
-                Console.WriteLine("Escribe un número en indice " + ne + ": "); ;
-                neg[ne] = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Escribe un número en indice " + i + ": "); ;
+                neg[i] = Convert.ToInt32(Console.ReadLine());
 
-                if (neg[ne] < 0)
+                if (neg[i] < 0)
                 {
-                    n++;
+                    i++;
                 }
-                Console.WriteLine("Hay un total de " + n + " números negativos.");
+                Console.WriteLine("Hay un total de " + i + " números negativos.");
             }
 
         }
