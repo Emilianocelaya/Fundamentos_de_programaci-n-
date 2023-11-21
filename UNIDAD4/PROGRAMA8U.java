@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.programa8u;
+package com.mycompany.programa8u4;
 
 /**
  *
  * @author Emiliano
  */
-public class PROGRAMA8U {
+public class PROGRAMA8U4 {
 
     public static void main(String[] args) {
     int[] numeros = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
