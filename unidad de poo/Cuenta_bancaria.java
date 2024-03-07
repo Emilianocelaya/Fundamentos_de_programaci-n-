@@ -1,79 +1,62 @@
 package banco;
 
 public class Cuenta_bancaria {
-    //* 1. Crear la clase
-    //* 2. Defiir los atributos
-    int numCuenta;
-    String nomCliente;
-    float saldo;
-    int codcvv;
-    //* 3. Definir el constructor
+//1. Crear la clase
+//2. Definir los atributos
+   private int numCuenta;
+   String nombCliente;
+   float saldo;
+   int cvv;
+//3. Definir el constructor
 
-    public Cuenta_bancaria(int numCuenta, String nomCliente, float saldo, int codcvv) {
-        this.numCuenta = numCuenta;
-        this.nomCliente = nomCliente;
-        this.saldo = saldo;
-        this.codcvv = codcvv;
-    }
+   public Cuenta_bancaria(int numCuenta, String nombCliente, float saldo,int cvv) {
+     this.numCuenta = numCuenta;
+     this.nombCliente = nombCliente;
+     this.saldo = saldo;
+     this.cvv = cvv;
+   }
 
-    public int getNumCuenta() {
-        return numCuenta;
-    }
+public int getNumCuenta() {
+return numCuenta;
+}
 
-    public String getNomCliente() {
-        return nomCliente;
-    }
+public void setNumCuenta(int numCuenta) {
+this.numCuenta = numCuenta;
+}
 
-    public float consultarSaldo() {
-        return saldo;
-    }
+public String getNombCliente() {
+return nombCliente;
+}
 
-    public int getCodcvv() {
-        return codcvv;
-    }
+public void setNombCliente(String nombCliente) {
+this.nombCliente = nombCliente;
+}
 
-    public void setNumCuenta(int numCuenta) {
-        this.numCuenta = numCuenta;
-    }
+public float consultarSaldo() {
+return saldo;
+}
 
-    public void setNomCliente(String nomCliente) {
-        this.nomCliente = nomCliente;
-    }
+public void setSaldo(float saldo) {
+this.saldo = saldo;
+}
 
-    public void setSaldo(float saldo) {
-        this.saldo = saldo;
-    }
+public int getCvv() {
+return cvv;
+}
 
-    public void setCodcvv(int codcvv) {
-        this.codcvv = codcvv;
-    }
-    
-    @Override
-    public String toString() {
-        return "Cuenta_bancaria{" + "numCuenta=" + numCuenta + ", nomCliente=" + nomCliente + ", saldo=" + saldo + ", codcvv=" + codcvv + '}';
-    }
-   //metodo depositar recibe una cantidad que 
-    //se sumara al saldo 
-    void depositar(double cantidad){
-        saldo += cantidad;
-        //la instruccion equivale a 
-        //saldo = salo + cantidad 
-        
-    
-    } 
-    //metodo retirar resive una cantidad que sera restada al saldo 
-    void retirar(double cantidad){
-        if (haysaldo(cantidad))
-        saldo-= cantidad;
-        else
-            System.out.println("fondos insuficientes");
-    }
-    //el metodo hay saldo retorna verdadero si el saldo es mayor o igual a una cantidad o retorna s falso en caso contrario 
-    boolean haysaldo(double cantidad){
-        if (saldo >= cantidad)
-            return true;
-        else
-            return false;
-    }
-    }
+public void setCvv(int cvv) {
+this.cvv = cvv;
+}
+// método sobre-escrito
+@Override
+public String toString() {
+return "CuentaBancaria{" + "numCuenta="
++ numCuenta + ", nombCliente="
++ nombCliente + ", saldo="
++ saldo + ", cvv=" + cvv + '}';
+}
+//método sobrecargado
+
+}
+
 
