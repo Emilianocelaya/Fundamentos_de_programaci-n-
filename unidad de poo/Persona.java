@@ -8,6 +8,20 @@ package com.mycompany.legisladores;
  *
  * @author SALA PAFP 26
  */
-public class Persona {
+public abstract class Persona {
+    String nombre;
+    int edad;
+    String domicilio;
+
+    public Persona(String nombre, int edad, String domicilio) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.domicilio = domicilio;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "nombre=" + nombre + ", edad=" + edad + ", domicilio=" + domicilio + '}';
+    }
     
 }
